@@ -1,0 +1,91 @@
+data-viz-titanic-coffee/
+│
+├── README.md
+├── .gitignore
+├── LICENSE
+│
+├── Titanic_Data_Visualization_Prajwal.twbx
+├── CoffeeChain_Visualization_Prajwal.twbx
+│
+├── screenshots/
+│   ├── titanic_bar_chart.png
+│   ├── titanic_heatmap.png
+│   ├── coffee_heatmap.png
+│   └── coffee_scatterplot.png
+│
+└── data/
+    ├── titanic.csv
+    └── coffee_chain.csv
+# ☕ Data Visualization Case Studies — Titanic & Coffee Chain  
+*Author: Prajwal Biradar*  
+*(AIML Student — Data Analytics and Visualization Projects)*  
+
+---
+
+## 📘 Overview
+
+This repository contains two Tableau case studies demonstrating **data visualization, aggregation, and analysis techniques** using real datasets:  
+1. **Titanic Dataset** — passenger survival analytics.  
+2. **Coffee Chain Dataset** — business insights on sales, profit, and product performance.
+
+Both `.twbx` files can be opened directly in **Tableau Desktop** or **Tableau Public**.  
+Each study includes charts such as heatmaps, scatter plots, histograms, box plots, bar charts, and pie charts.
+
+---
+
+## 🧩 CASE STUDY 1: TITANIC DATASET
+
+### 🎯 Objective
+Perform exploratory visualization to understand passenger demographics, class distribution, and survival patterns.
+
+### 🧠 Tools Used
+- Tableau Desktop 2024.3  
+- Dataset: `titanic.csv`  
+
+### 📊 Visualizations Performed
+
+| Task | Visualization | Steps Summary |
+|:--|:--|:--|
+| **1** | Bar Chart — Passengers vs Gender | `Sex` → Columns, `PassengerId` → Rows, Count aggregation |
+| **2** | Stacked Bar — Survival Count by Gender | `Sex` → Columns, `Survived` → Rows, `PassengerId` → Count |
+| **3** | Bar Chart — Survival Rate by Class | `Pclass` → Columns, `Survived` → Rows (Average) |
+| **4** | Histogram — Age Distribution | `Age (bin)` → Columns, `PassengerId` → Count |
+| **5** | Bar Chart — Avg Fare by Class | `Pclass` → Columns, `Fare` → Rows (Average) |
+| **6** | Scatter Plot — Fare vs Age | `Age` → Columns, `Fare` → Rows |
+| **7** | Bar Chart — Passenger Count by Port | `Embarked` → Columns, `PassengerId` → Count |
+| **8** | Heatmap — Survival by Gender & Class | `Sex` → Columns, `Pclass` → Rows, `Survived` → Color (Average) |
+| **9** | Box Plot — Age vs Survival | `Survived` → Columns, `Age` → Rows, Mark = Box Plot |
+| **10** | Pie Chart — Gender Distribution | `Sex` → Color, `PassengerId` → Count, Mark = Pie |
+
+### 🧾 Insight Summary
+- Female passengers had higher survival rates.  
+- First-class passengers had better survival chances.  
+- Most passengers aged between 20–40 years.  
+- Majority boarded from Southampton (S).  
+
+---
+
+## ☕ CASE STUDY 2: COFFEE CHAIN DATASET
+
+### 🎯 Objective
+Perform multi-dimensional analysis on coffee product sales, profit, marketing, and regional performance.
+
+### 🧠 Tools Used
+- Tableau Desktop 2024.3  
+- Dataset: `coffee_chain.csv`
+
+### 📊 Visualization Tasks & Steps
+
+Below are all the steps converted into Markdown + pseudo-code style for GitHub readability:
+
+---
+
+### (i) Heat Map – Product Type, State, and Profit
+
+```text
+Steps:
+1. Drag State → Rows
+2. Drag Product Type → Columns
+3. Drag Profit → Color (Marks)
+4. Change Mark type → Square
+5. Apply Filter: Product Type = Espresso
